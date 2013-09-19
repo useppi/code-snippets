@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+// install RestSharp >= 104.2.0 from NuGet
 using RestSharp;
 
 namespace MultipartFormData.RestSharpSample
