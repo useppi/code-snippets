@@ -7,6 +7,7 @@
      PHP code snippet to show programming the HTTPS layer (client)
 
      changelog:
+     v. 2015-07b 1.0 changed ClientProtocolVersion to 2015-07n
      v. 2013-04 1.0 added ClientProtocolVersion and ClientID headers, minor changes 
      v. 2012-05 1.0
 
@@ -34,8 +35,8 @@ curl_setopt($cu, CURLOPT_HTTPAUTH,          CURLAUTH_BASIC);
 curl_setopt($cu, CURLOPT_PROTOCOLS,         CURLPROTO_HTTP | CURLPROTO_HTTPS);
 curl_setopt($cu, CURLOPT_USERPWD,           "chris:secret");
     
-curl_setopt($cu, CURLOPT_HTTPHEADER,        array("X-AlpineBits-ClientProtocolVersion: 2013-04",
-                                                  "X-AlpineBits-ClientID: sample-client.php v. 2013-04 1.0"));
+curl_setopt($cu, CURLOPT_HTTPHEADER,        array("X-AlpineBits-ClientProtocolVersion: 2015-07b",
+                                                  "X-AlpineBits-ClientID: sample-client.php v. 2015-07b 1.0"));
 
 $data = array(
     "action" => "OTA_HotelAvailNotif",
